@@ -5,7 +5,7 @@ from bottle import route, run
 def index(name='World'):
     return '<b>Hello %s!</b>' % name
 
-@app.route('/view/')
+@route('/view/')
 def index():
     """Home page"""
 
