@@ -5,15 +5,6 @@ from bottle import route, run
 def index(name='World'):
     return '<b>Hello %s!</b>' % name
 
-@route('/view/')
-def index():
-    """Home page"""
-
-    info = {'title': 'Welcome Home!',
-            'content': 'Hello World'
-            }
-
-    return template('simple.tpl', info)
 
 
 if __name__ == '__main__':
