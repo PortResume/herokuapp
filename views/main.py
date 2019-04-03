@@ -2,7 +2,7 @@ from bottle import Bottle, template
 
 app = Bottle()
 
-@app.route('/')
+@app.route('/view/')
 def index():
     """Home page"""
 
